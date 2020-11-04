@@ -1,12 +1,32 @@
-<
-<button (click)="toggle('showTop')">Show form 1</button>
-<button (click)="toggle('showBottom')">Show form 2</button>
-<button (click)="toggle('showBoth')">Show both</button>
-<div *ngIf="showBoth || showTop">
-  <app-form-one></app-form-one>
+
+<!--<button (click)="toggle('showTop')">Show form 1</button>-->
+<!--<button (click)="toggle('showBottom')">Show form 2</button>-->
+<!--<button (click)="toggle('showBoth')">Show both</button>-->
+
+<!--<div class="top">-->
+<!--  <div *ngIf="showBoth || showTop">-->
+<!--    <app-form-one></app-form-one>-->
+<!--  </div>-->
+<!--</div>-->
+<!--  <br>-->
+<!--  <br>-->
+<!--<div class="bottom">-->
+<!--  <div *ngIf="showBoth || showBottom">-->
+<!--    <app-form-two></app-form-two>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--You can uncomment above and comment this out and do it programatically-->
+<div class="top">
+  <div *ngIf="showBoth || showTop">
+    <app-form-one></app-form-one>
+  </div>
 </div>
 <br>
 <br>
-<div *ngIf="showBoth || showBottom">
-  <app-form-two></app-form-two>
+<div class="bottom">
+  <div *ngIf="showBoth || showBottom">
+    <app-form-two></app-form-two>
+  </div>
 </div>
