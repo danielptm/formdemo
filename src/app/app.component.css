@@ -5,24 +5,22 @@
 
 @media screen and (min-width: 600px) {
   .top {
-    visibility: hidden;
+    display: none;
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   .bottom {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (min-width: 800px) {
   .bottom {
-    visibility: visible;
+    display: flex;
   }
   .top {
-    visibility: visible;
+    display: flex;
   }
 }
 
