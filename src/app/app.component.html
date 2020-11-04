@@ -21,7 +21,8 @@
 
 <h2>
 Try putting stuff in the fields.
-This is the case if you hide the items with css or if you conditionally render the items. Personally i think for our use case with
+This is the case if you hide the items with css or if you conditionally render the items with ngIf statements.
+Personally i think for our use case with
 angular we should try and hide the 2 forms with css accordingly as is done here.
 </h2>
 <div class="top">
@@ -45,4 +46,6 @@ angular we should try and hide the 2 forms with css accordingly as is done here.
 <h4>
   Notice how the data binds to the different input. The fields in FormService can bind to anything as long as the app is alive.
   Its state is managed in the class and providing it in app.module.ts makes it a singleton which can be used anywhere in the app.
+  I need to look at Tony's code, but you should only have to use the event emitters if you need to talk between the apps. I didnt
+  see a reason in his demo for that.
 </h4>
